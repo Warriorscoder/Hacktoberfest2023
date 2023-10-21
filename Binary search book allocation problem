@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+/*arr is the array of books and contains the pages of ith book 
+we have to find min of the max allocated pages 
+Rules to allocate page
+ *every student should get a book
+ *every book should be allocated  */
+
+void allocate_books(int arr[],int size , int data, int sum)
+{
+    int s = 0;
+    int e = sum;
+    int mid = s + (e-s)/2;
+
+}
+
+int main()
+{
+    int size;
+    cin >> size;
+    int arr[size];
+    int data;
+    cin>>data;
+    int sum = 0;
+
+    for (int  i = 0; i < size; i++)
+    {
+        cin>>arr[i];
+        sum = sum + arr[i];
+    }
+    
+    allocate_books(arr,size,data,sum);
+}
